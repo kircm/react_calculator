@@ -15,12 +15,29 @@ Try It
 
 Install
 ---
-
-`npm install`
-
+`yarn install`
 
 
 Usage
 ---
 
 `npm start`
+
+
+Backwards compatibility
+----
+
+- Installing packages using `npm install` produces error
+  
+  `TypeError: fsevents is not a constructor`
+  
+  when starting with `npm start`
+
+- Installing packages using `yarn install`:
+  
+  - warning:
+    
+    `warning react-scripts > fsevents@2.1.2: "Please update to latest v2.3 or v2.2"`
+
+  - `npm start` -> OK
+
